@@ -24,14 +24,28 @@ img {
 	width: 100%;
 	object-fit: cover;
 }
-p {
+p{
 	color: black;
-	font-size: 1.4rem;
+	font-size: 2.6rem;
 	margin-top: 5px;
-	line-height: 2.5rem;
-	font-weight: 300;
+	/* line-height: 2.5rem; */
+	font-weight: 400;
 	letter-spacing: 0.05rem;
+	margin-left: 14px;
+	margin-right: 10px;
+	/* animation: floating 3s ease-in-out infinite; */
 }
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }   
+}
+p span{
+	color: crimson;
+	font-size: 3.9rem;
+	letter-spacing: -7px;
+}
+
 .section-title {
 	font-size: 4rem;
 	font-weight: 300;
@@ -40,6 +54,26 @@ p {
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 	text-align: center;
+}
+.section-title3 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-top: 2%;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 0.1rem; */
+    text-align: center;
+    /* margin: -36%; */
+    /* width: 287%; */
+    /* transform: translateX(0%); */
+    margin-right: 21px;
+    margin-left: 21px;
+}
+
+.span22{
+	font-size: 6.5rem;
+	color: crimson;
+	letter-spacing: -10px;
 }
 .section-title span {
 	color: crimson;
@@ -79,14 +113,6 @@ p {
 .cta2:hover {
 	color: white;
 	background-color: crimson;
-}
-.brand h1 {
-	font-size: 3rem;
-	text-transform: uppercase;
-	color: white;
-}
-.brand h1 span {
-	color: crimson;
 }
 
 /* width */
@@ -158,7 +184,7 @@ p {
 	left: 0%;
 }
 #header .nav-list ul a {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	text-decoration: none;
@@ -244,7 +270,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url('https://freellustrustrations.s3.us-east-2.amazonaws.com/free-images/freeimg_47841037freejpg850.jpg');
+	background-image: url(img/homepage.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -339,17 +365,18 @@ p {
 	padding: 0 50px;
 	justify-content: flex-start;
 }
-#hero_1 h1 {
-	display: block;
-	width: fit-content;
-	font-size: 5.5rem;
-	position: relative;
-	justify-self: center;
-	align-items: center;
-	text-align: center;
-	color: transparent;
-	animation: text_reveal 0.5s ease forwards;
-	animation-delay: 1s;
+#hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    color: transparent;
+    animation: text_reveal 0.5s ease forwards;
+    animation-delay: 1s;
+    text-align: left;
 }
 #hero_1 h1:nth-child(1) {
 	animation-delay: 1s;
@@ -383,7 +410,7 @@ p {
 
 /* Hero 2 */
 #hero_2{
-	background: url(https://s3.envato.com/files/238233065/preview.jpg);
+	background: url(img/aboutus.jpg);
 	background-size: cover;
 	background-position:top center ;
 	position: relative;
@@ -408,16 +435,17 @@ p {
 	justify-content: flex-start;
 }
 #hero_2 h1 {
-	display: block;
-	width: fit-content;
-	font-size: 5.5rem;
-	position: relative;
-	justify-self: center;
-	align-items: center;
-	text-align: center;
-	color: transparent;
-	animation: text_reveal 0.1s ease forwards;
-	animation-delay: 1s;
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    color: transparent;
+    animation: text_reveal 0.5s ease forwards;
+    animation-delay: 1s;
+    text-align: left;
 }
 #hero_2 h1:nth-child(1) {
 	animation-delay: 1s;
@@ -452,7 +480,7 @@ p {
 /* Hero_3 */
 
 #hero_3{
-	background: url(/img/indu_pic.jpeg);
+	background: url(img/solutionpic.jpg);
 	background-size: cover;
 	background-position:top center ;
 	position: relative;
@@ -477,16 +505,17 @@ p {
 	justify-content: flex-start;
 }
 #hero_3 h1 {
-	display: block;
-	width: fit-content;
-	font-size: 5.5rem;
-	position: relative;
-	justify-self: center;
-	align-items: center;
-	text-align: center;
-	color: transparent;
-	animation: text_reveal 0.1s ease forwards;
-	animation-delay: 1s;
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    color: transparent;
+    animation: text_reveal 0.5s ease forwards;
+    animation-delay: 1s;
+    text-align: left;
 }
 #hero_3 h1:nth-child(1) {
 	animation-delay: 1s;
@@ -553,9 +582,20 @@ p {
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
-	height: 250px;
+	height: 500px;
 	
 }
+
+#services .service-item h2 {
+	top: 5px;
+	text-align: center;
+	font-size : 40px;
+}
+
+/* #services .service-item p{
+	font-size: 17px;
+} */
+
 #services .service-item:hover{
 	box-shadow: 0 0 15px 0px rgb(0 0 0);
 	
@@ -578,7 +618,7 @@ p {
 	margin-bottom: 20px;
 }
 #services .service-item h2 {
-	font-size: 2rem;
+	font-size: 2.9rem;
 	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -587,6 +627,7 @@ p {
 #services .service-item p {
 	color: white;
 	text-align: left;
+	font-size: 16px;
 }
 /* End Services Section */
 
@@ -776,11 +817,20 @@ p {
 #footer h2 {
 	color: white;
 	font-weight: 500;
-	font-size: 1.8rem;
+	font-size: 4rem;
 	letter-spacing: 0.1rem;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+.brand h1 {
+	font-size: 4rem;
+	text-transform: uppercase;
+	color: white;
+}
+.brand h1 span {
+	color: crimson;
+}
+
 #footer .social-icon {
 	display: flex;
 	margin-bottom: 30px;
@@ -799,7 +849,7 @@ p {
 }
 #footer p {
 	color: white;
-	font-size: 1.3rem;
+	font-size: 1.7rem;
 }
 /* End Footer */
 
@@ -849,7 +899,16 @@ p {
 
 	/* Hero */
 	#hero h1 {
-		font-size: 7rem;
+		font-size: 6.5rem;
+	}
+	#hero_1 h1 {
+		font-size: 6.5rem;
+	}
+	#hero_2 h1 {
+		font-size: 6.5rem;
+	}
+	#hero_3 h1 {
+		font-size: 6.5rem;
 	}
 	/* End Hero */
 
@@ -907,6 +966,10 @@ p {
 	/* End About */
 
 	/* contact  */
+
+	#contact{
+		width: 98%;
+	}
 	#contact .contact {
 		flex-direction: column;
 		padding: 100px 0;
@@ -921,8 +984,9 @@ p {
 		justify-content: space-evenly;
 		margin: 0;
 	}
+	
 	#contact .contact-item {
-		width: 30%;
+		width: 36.4%;
 		margin: 0;
 		flex-direction: row;
 	}
@@ -938,9 +1002,29 @@ p {
 		text-align: left;
 		padding-left: 20px;
 	}
+	#contact .contact-info h2{
+		font-size: 1.5rem;
+	}
 	/* End contact  */
+
+	#services .service-item p {
+		color: white;
+		text-align: left;
+		font-size: 16.5px;
+	}
+}
+@media only screen and (max-width:767px){
+	#contact{
+		height: 900px;
+	}
+}
+@media only screen and (max-width:621px){
+	#contact{
+		height: 1055px;
+	}
 }
 /* End Media Query For Tablet */
+
 @media only screen and (max-width:430px){
 	#contact {
 		background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(img/contactus.jpg);
@@ -950,6 +1034,31 @@ p {
 		width: 96%;
 		border-radius: 45px;
 		height: 1021px;
+	}
+	#services .service-item {
+		flex-basis: 100%;
+	}
+	.section-title3 {
+		font-size: 3.3rem;
+		font-weight: 300;
+		color: black;
+		margin-top: 2%;
+		/* text-transform: uppercase; */
+		/* letter-spacing: 0.1rem; */
+		text-align: left;
+		/* margin: -36%; */
+		/* width: 287%; */
+		/* transform: translateX(0%); */
+		margin-right: 0px;
+		margin-left: 9px;
+	}
+}
+
+@media  only screen and (max-width:330px){
+	#services .service-item p {
+		color: white;
+		text-align: left;
+		font-size: 16px;
 	}
 }
 /* Media Query For Desktop */
@@ -969,7 +1078,7 @@ p {
 		display: inline-block;
 	}
 	#header .nav-list ul li a {
-		font-size: 1.8rem;
+		font-size: 2rem;
 	}
 	#header .nav-list ul a:after {
 		display: none;
@@ -977,7 +1086,7 @@ p {
 	/* End header */
 
 	#services .service-bottom .service-item {
-		flex-basis: 22%;
+		flex-basis: 30%;
 		margin: 1.5%;
 	}
 }
@@ -1010,9 +1119,7 @@ p {
 	}
 }
 
-.span2{
-	font-size: 8rem;
-}
+
 
 .centermake{
 	text-align: center;
@@ -1020,6 +1127,12 @@ p {
 
 .tab-logo{
 	border-radius: 30px;
+}
+
+.logo-main {
+    width: 19%;
+    /* height: 50%; */
+    padding: 8px 0px;
 }
 
 
